@@ -10,8 +10,14 @@
     font-style: normal;
     font-display: swap;
 }
+
+.wrapper {
+    padding: 10vw 1rem 1rem 1rem;
+}
+
 h1 {
     font-family: 'Potra';
+    font-size: min(4vw, 8vw);
     font-weight: 300;
     line-height: 1.5;
     letter-spacing: 0.075em;
@@ -19,7 +25,3 @@ h1 {
     margin: 0 0 1rem 0;
 }
 
-.logo {
-    border: 200px;
-    margin: 200px;
-}
