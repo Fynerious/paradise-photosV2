@@ -13,17 +13,22 @@
 body {
     background: mintcream;
 }
-.wrapper {
-    padding: 10vw 1rem 1rem 1rem;
-    text-align: center;
+.header {
+    display: inline-block;
+    width: 100%;
 }
 
-.logo {
-
+.header div {
+    display: inline-block;
 }
 
 .navigation {
+    margin: auto;
+}
 
+li {
+    display: inline-block;
+    padding: 0 1rem;
 }
 
 h1 {
