@@ -10,15 +10,31 @@
 <body>
 <div class="header">
         <h1><a href="index.html" class="brand">Paradise Photos</a></h1>
-    <div class="navigation">
-        <nav>
+    <div class="navbar">
+        <nav id="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
-            </ul>    
+            </ul>
+            <img id="close" src="assets/icons/icons8-cross-50.png" class="close-icon" alt="" onclick="closemenu()" />
         </nav>
+        <img id="open" src="assets/icons/icons8-menu-50.png" class="menu-icon" alt="" onclick="openmenu()"/>
     </div>
 </div>
+
+<div class="gallery">
+        
+</div>
+
+<script>
+    var menu = document.getElementById('menu');
+    function closemenu() {
+        menu.style.display = "none";
+    }
+    function openmenu() {
+        menu.style.display = "block";
+    }
+</script>
 </body>
 </html>
