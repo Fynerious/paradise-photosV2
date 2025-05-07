@@ -134,4 +134,25 @@ nav {
     margin: 0;
 }
 
-/* -----GALLERY----- */
+/* -----GALLERY----- 
+
+.gallery {
+    height: 40vw;
+    min-height: 420px;
+    max-height: 900px;
+    margin-top: 6vw;
+    width: auto;
+}
+
+.gallery img {
+    height: 40vw;
+    max-height: 900px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+}
+ */
