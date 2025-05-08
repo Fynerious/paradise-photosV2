@@ -26,7 +26,7 @@ section, summary, time, mark, audio, video, a:visited {
     url('/assets/webfonts/Potra.woff') format('woff'),
     url('/assets/webfonts/Potra.ttf') format('truetype');
     /* url('/assets/webfonts/Potra.svg#Potra') format('svg'); */
-    font-weight: 100;
+    font-weight: 200;
     font-style: normal;
     font-display: swap;
 }
@@ -44,7 +44,7 @@ section, summary, time, mark, audio, video, a:visited {
 }
 
 body {
-    background: #2b2b2b;
+    background: whitesmoke;
 }
 
 .header {
@@ -52,7 +52,6 @@ body {
 }
 
 .logo {
-    background-color: pink;
     height: 100px;
 }
 
@@ -99,9 +98,9 @@ nav {
 
 .brand {
     font-family: 'Potra';
-    color: #FEFBEA;
+    color: black;
     font-size: 60px;
-    font-weight: 100;
+    font-weight: 200;
     letter-spacing: 0.075em;
     text-transform: uppercase;
     float: left;
@@ -157,7 +156,7 @@ nav {
 }
  */
 
-/* ---- gallery slider ---- */
+/* ---- gallery slider ---
 
 @keyframes slide {
     from {
@@ -195,7 +194,6 @@ nav {
     background: linear-gradient(to right, rgba(43, 43, 43, 0), rgba(43, 43, 43, 1));
 }
 
-/*
 .gallery:hover .gallery-slide {
     animation-play-state: paused;
 }
