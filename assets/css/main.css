@@ -45,6 +45,7 @@ section, summary, time, mark, audio, video, a:visited {
 
 body {
     background: whitesmoke;
+    overflow: hidden;
 }
 
 .header {
@@ -75,7 +76,7 @@ nav ul li a {
     color: #FEFBEA;
     letter-spacing: 5px;
     padding: 5px;
-    font-family: Oswald;
+    font-family: Potra;
 }
 
 nav ul li a:hover {
@@ -133,18 +134,6 @@ nav {
     margin: 0;
 }
 
-.gallery-slide {
-    display: inline-block;
-    animation: 70s slide infinite linear;
-}
-
-.gallery-slide img {
-    height: 40vw;
-    min-height: 240px;
-    max-height: 900px;
-    margin: 0 20px;
-}
-
 /* ---- anfrage ----*/
 
 .form-anfrage {
@@ -164,69 +153,57 @@ form div input {
     height: 30px;
 }
 
-
 /* -----GALLERY----- 
 
 .gallery {
-    height: 40vw;
-    min-height: 420px;
-    max-height: 900px;
-    margin-top: 6vw;
-    width: auto;
-}
-
-.gallery img {
-    height: 40vw;
-    max-height: 900px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    object-fit: cover;
-}
- */
-
-/* ---- gallery slider ---
-
-@keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-.gallery {
-    overflow: hidden;
-    padding-top: 5vw;
-    white-space: nowrap;
+    width: 80vw;
+    max-height: 10vw;
     position: relative;
+    margin: auto;
 }
 
-.gallery:before,
-.gallery:after {
+.gallery img{
+    width: 80vw;
+    max-height: 10vw;
+    margin: auto;
+}
+
+.slide {
+    vertical-align: middle;
+}
+
+.prev, .next {
+    cursor: pointer;
     position: absolute;
-    top: 0;
-    width: 250px;
-    height: 100%;
-    content: "";
-    z-index: 2;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
-.gallery:before {
-    left: 0;
-    background: linear-gradient(to left, rgba(43, 43, 43, 0), rgba(43, 43, 43, 1));
-}
-
-.gallery:after {
+.next {
     right: 0;
-    background: linear-gradient(to right, rgba(43, 43, 43, 0), rgba(43, 43, 43, 1));
+    border-radius: 3px 0 0 3px;
 }
 
-.gallery:hover .gallery-slide {
-    animation-play-state: paused;
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
 }
- */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+*/
+
+
