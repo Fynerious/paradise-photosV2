@@ -43,6 +43,11 @@ section, summary, time, mark, audio, video, a:visited {
     font-display: swap;
 }
 
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
 body {
     background: whitesmoke;
     overflow: hidden;
@@ -137,27 +142,87 @@ nav {
 /* ---- anfrage ----*/
 
 .form-anfrage {
-    background-color: grey;
-    width: 100%;
+    margin-top: 5vw;
 }
 
 form div {
-    background-color: greenyellow;
     width: 50vw;
-    min-width: 360px;
+    min-width: 320px;
     max-width: 1500px;
     margin: 30px auto;
+    display: block;
     align-content: center;
 }
 
-form div input {
-    height: 30px;
+.form-item {
+    width: 34vw;
+    min-width: 300px;
+    display: block;
     margin: auto;
-    
+    font-family: 'Oswald';
+    font-size: 1.2em;
+
+}
+
+select {
+    width: 34vw;
+    min-width: 300px;
+    height: 34px;
+    display: block;
+    margin: auto;
+    font-family: 'Oswald';
+    font-size: 1.2em;
+}
+
+form div input {
+    height: 34px;
 }
 
 .actions li {
     list-style-type: none;
+    display: block;
+    margin: auto;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit {
+    width: 40vw;
+    min-width: 300px;
+}
+
+.actions li input {
+    margin:auto;
+    display: block;
+    height: 40px;
+    width: 140px;
+    font-size: 1.2em;
+    font-family: 'Oswald';
+}
+
+.toc {
+}
+
+label {
+    display: block;
+}
+
+.toc input {
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    margin:0 5px 0 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -5px;
+    *overflow: hidden;
+}
+
+label a  {
+    color: blue;
+    text-decoration: none;
 }
 
 /* -----GALLERY----- */

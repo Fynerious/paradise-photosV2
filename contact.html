@@ -24,9 +24,9 @@
     <div class="form-anfrage">
         <form method="POST" action="https://formkeep.com/f/088d589f3aa2">
                 <div class="name">
-                    <input maxlength="100" required type="text" name="name" id="name" value="" placeholder="Name"/>
+                    <input class="form-item" maxlength="100" required type="text" name="name" id="name" value="" placeholder="Name"/>
                 <div class="email">
-                    <input maxlength="100" required type="email" name="email" id="email" value="" placeholder="Email"/>
+                    <input class="form-item" maxlength="100" required type="email" name="email" id="email" value="" placeholder="Email"/>
                 </div>
                 <div class="category">
                     <select id="category" name="category">
@@ -38,15 +38,16 @@
                     </select>
                 </div>
                 <div class="anfrage">
-                    <textarea maxlength="7500" required name="message" id="message" placeholder="Deine Anfrage..." rows="8"></textarea>
+                    <textarea class="form-item" maxlength="7500" required name="message" id="message" placeholder="Deine Anfrage..." rows="8"></textarea>
                 </div>
-                <div>
-                    <input autocomplete="off" required type="checkbox" id="toc" name="toc">
-                    <label for="toc">Du erklärst dich damit einverstanden, dass die Daten zum Zwecke deines Anliegens verarbeitet und gespeichert werden. Für mehr Infos klicke bitte <a target="_blank" href="/Datenschutz.html">hier.</a> </label>
+                <div class="form-item toc">
+                    <label for="toc">
+                        <input autocomplete="off" required type="checkbox" id="toc" name="toc">Du erklärst dich damit einverstanden, dass die Daten zum Zwecke deines Anliegens verarbeitet und gespeichert werden. Für mehr Infos klicke bitte <a target="_blank" href="/Datenschutz.html">hier.</a> 
+                        </label>
                 </div>
                 <div class="submit">
                     <ul class="actions">
-                        <li><input type="submit" value="Sende Anfrage"/></li>
+                        <li><input type="submit" value="Anfrage senden"/></li>
                     </ul>
                 </div>
         </form>
