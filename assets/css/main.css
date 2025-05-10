@@ -122,7 +122,7 @@ nav {
     right: 80px;
     top: 50px;
     cursor: pointer;
-    background-image: url('/assets/icons/icons8-square-50.png');
+    background-color: #181818;
 }
 
 .menu-icon {
@@ -153,57 +153,87 @@ form div input {
     height: 30px;
 }
 
-/* -----GALLERY----- 
+/* -----GALLERY----- */
 
-.gallery {
-    width: 80vw;
-    max-height: 10vw;
+
+
+.wrapper{
+    display: flex;
+    max-width: 96vw;
     position: relative;
-    margin: auto;
+    margin: 10vw auto 0 auto;
 }
-
-.gallery img{
-    width: 80vw;
-    max-height: 10vw;
-    margin: auto;
-}
-
-.slide {
-    vertical-align: middle;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
+.wrapper i{
     top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: rgba(254, 251, 234, 0.6);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+.wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+    background: #f2f2f2;
+}
+.wrapper i:first-child{
+    left: 10px;
+    display: none;
+}
+.wrapper i:last-child{
+    right: 10px;
+}
+.wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+/* bei Proplemen entfernen */
+.carousel {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    scroll-snap-type: x proximity;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+}
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel.dragging img{
+    pointer-events: none;
+}
+.carousel img{
+    object-fit: cover;
+    scroll-snap-align: start; /* bei Problemen entfernen */
     user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 3);
 }
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+.carousel img:first-child{
+    margin-left: 0px;
 }
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+@media screen and (max-width: 900px) {
+  .carousel img{
+      width: calc(100% / 2);
+  }
 }
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+@media screen and (max-width: 550px) {
+  .carousel img{
+      width: 100%;
+  }
 }
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-*/
-
-

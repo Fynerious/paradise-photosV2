@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
 <div class="header">
@@ -17,31 +17,28 @@
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
             </ul>
-            <img id="close" src="assets/icons/icons8-cross-50.png" class="close-icon" alt="" onclick="closemenu()" />
+            <img id="close" src="assets/icons/close.png" class="close-icon" alt="" onclick="closemenu()" />
         </nav>
-        <img id="open" src="assets/icons/icons8-menu-50.png" class="menu-icon" alt="" onclick="openmenu()"/>
+        <img id="open" src="assets/icons/menu.png" class="menu-icon" alt="" onclick="openmenu()"/>
     </div>
 </div>
 
-<!-- Gallery 
-
-<div class="gallery">
-    <div class="slide fade">
-        <img src="assets/images/adler1.jpg" alt="">
+<div class="wrapper">
+    <i id="left" class="fa-solid fa-angle-left"></i>
+    <div class="carousel">
+        <!-- bei Problemen draggable="false" -->
+        <img src="assets/images/adler1.jpg" alt="img" draggable="true">
+        <img src="assets/images/granc-6.jpg" alt="img" draggable="true">
+        <img src="assets/images/DMM-5.jpg" alt="img" draggable="true">
+        <img src="assets/images/astro-3.jpg" alt="img" draggable="true">
+        <img src="assets/images/adler1.jpg" alt="img" draggable="true">
+        <img src="assets/images/granc-6.jpg" alt="img" draggable="true">
+        <img src="assets/images/DMM-5.jpg" alt="img" draggable="true">
+        <img src="assets/images/astro-3.jpg" alt="img" draggable="true">
     </div>
-    <div class="slide fade">
-        <img src="assets/images/astro-3.jpg" alt="">
-    </div>
-    <div class="slide fade">
-        <img src="assets/images/granc-6.jpg" alt="">
-    </div>
-    <div class="slide fade">
-        <img src="assets/images/DMM-5.jpg" alt="">
-    </div>
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
+    <i id="right" class="fa-solid fa-angle-right"></i>
 </div>
--->
+
 <script src="assets/js/main.js"></script>
 </body>
 </html>
