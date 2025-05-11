@@ -254,6 +254,7 @@ select {
 }
 form div input {
     height: 34px;
+    border-radius: 6px;
 }
 .actions li {
     list-style-type: none;
@@ -261,6 +262,7 @@ form div input {
     margin: auto;
 }
 textarea {
+    border-radius: 6px;
     resize: vertical;
 }
 .submit {
