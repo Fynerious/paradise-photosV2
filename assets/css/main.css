@@ -30,7 +30,6 @@ section, summary, time, mark, audio, video, a:visited {
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Oswald';
     src: url('/assets/webfonts/Oswald-Regular.eot');
@@ -42,39 +41,32 @@ section, summary, time, mark, audio, video, a:visited {
     font-style: normal;
     font-display: swap;
 }
-
 html {
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
-
 body {
     background: whitesmoke;
     overflow: hidden;
+    min-height: 100vh;
 }
-
 .header {
     height: 120px;
 }
 
-.logo {
-    height: 100px;
-}
+/*----- Menu ----*/
 
 .navbar {
     float: right;
     height: 100px;
 }
-
 nav ul  {
     margin-top: 140px;
 }
-
 nav ul li {
     list-style:  none;
     margin: 35px 0;
 }
-
 nav ul li a {
     text-decoration:  none;
     font-size: 60px;
@@ -83,12 +75,10 @@ nav ul li a {
     padding: 5px;
     font-family: Potra;
 }
-
 nav ul li a:hover {
     color: dimgrey;
     transition: 0.2s;
 }
-
 nav {
     position: absolute;
     width:  100%;
@@ -101,7 +91,6 @@ nav {
     justify-content: center;
     text-align: center;
 }
-
 .brand {
     font-family: 'Potra';
     color: black;
@@ -112,12 +101,10 @@ nav {
     float: left;
     margin: 40px 0 0 30px
 }
-
-
-/* wird auf mobile kleiner */
 @media screen and (max-width: 985px) {
     .brand {
         font-size: 30px;
+        margin: 40px 0 0 20px
     }
 }
 
@@ -129,7 +116,13 @@ nav {
     cursor: pointer;
     background-color: #181818;
 }
-
+@media screen and (max-width: 985px) {
+    .close-icon {
+        width: 30px;
+        right: 20px;
+        top: 43px;
+    }
+}
 .menu-icon {
     width: 40px;
     position: absolute;
@@ -138,96 +131,15 @@ nav {
     cursor: pointer;
     margin: 0;
 }
-
-/* ---- anfrage ----*/
-
-.form-anfrage {
-    margin-top: 5vw;
-}
-
-form div {
-    width: 50vw;
-    min-width: 320px;
-    max-width: 1500px;
-    margin: 30px auto;
-    display: block;
-    align-content: center;
-}
-
-.form-item {
-    width: 34vw;
-    min-width: 300px;
-    display: block;
-    margin: auto;
-    font-family: 'Oswald';
-    font-size: 1.2em;
-
-}
-
-select {
-    width: 34vw;
-    min-width: 300px;
-    height: 34px;
-    display: block;
-    margin: auto;
-    font-family: 'Oswald';
-    font-size: 1.2em;
-}
-
-form div input {
-    height: 34px;
-}
-
-.actions li {
-    list-style-type: none;
-    display: block;
-    margin: auto;
-}
-
-textarea {
-    resize: vertical;
-}
-
-.submit {
-    width: 40vw;
-    min-width: 300px;
-}
-
-.actions li input {
-    margin:auto;
-    display: block;
-    height: 40px;
-    width: 140px;
-    font-size: 1.2em;
-    font-family: 'Oswald';
-}
-
-.toc {
-}
-
-label {
-    display: block;
-}
-
-.toc input {
-    width: 18px;
-    height: 18px;
-    padding: 0;
-    margin:0 5px 0 0;
-    vertical-align: bottom;
-    position: relative;
-    top: -5px;
-    *overflow: hidden;
-}
-
-label a  {
-    color: blue;
-    text-decoration: none;
+@media screen and (max-width: 985px) {
+    .menu-icon {
+        width: 30px;
+        right: 20px;
+        top: 43px;
+    }
 }
 
 /* -----GALLERY----- */
-
-
 
 .wrapper{
     display: flex;
@@ -271,10 +183,9 @@ label a  {
     scroll-behavior: smooth;
 }
 
-/* bei Proplemen entfernen */
 .carousel {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     scroll-snap-type: x proximity;
     scroll-behavior: smooth;
     overflow-x: scroll;
@@ -291,7 +202,7 @@ label a  {
 }
 .carousel img{
     object-fit: cover;
-    scroll-snap-align: start; /* bei Problemen entfernen */
+    scroll-snap-align: start;
     user-select: none;
     margin-left: 14px;
     width: calc(100% / 3);
@@ -308,4 +219,121 @@ label a  {
   .carousel img{
       width: 100%;
   }
+}
+
+/* ---- anfrage ----*/
+
+.form-anfrage {
+    margin-top: 5vw;
+}
+form div {
+    width: 50vw;
+    min-width: 320px;
+    max-width: 1500px;
+    margin: 30px auto;
+    display: block;
+    align-content: center;
+}
+.form-item {
+    width: 34vw;
+    min-width: 300px;
+    display: block;
+    margin: auto;
+    font-family: 'Oswald';
+    font-size: 1.2em;
+
+}
+select {
+    width: 34vw;
+    min-width: 300px;
+    height: 34px;
+    display: block;
+    margin: auto;
+    font-family: 'Oswald';
+    font-size: 1.2em;
+}
+form div input {
+    height: 34px;
+}
+.actions li {
+    list-style-type: none;
+    display: block;
+    margin: auto;
+}
+textarea {
+    resize: vertical;
+}
+.submit {
+    width: 40vw;
+    min-width: 300px;
+}
+.actions li input {
+    margin:auto;
+    display: block;
+    height: 40px;
+    width: 140px;
+    font-size: 1.2em;
+    font-family: 'Oswald';
+}
+label {
+    display: block;
+}
+.toc input {
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    margin:0 5px 0 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -5px;
+    *overflow: hidden;
+}
+label a  {
+    color: dimgrey;
+    text-decoration: none;
+    border-bottom: 2px dotted rgba(96, 96, 96, 0.6);
+}
+.carousel img {
+    border-radius: 6px;
+}
+
+/* ---- Footer ---- */
+
+footer {
+    height: 60px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.black-row {
+    height: 2px;
+    width: 30vw;
+    min-width: 260px;
+    margin: 0 auto;
+    background-color: rgba(96, 96, 96, 0.3);
+    border-radius: 10px;
+}
+footer ul {
+    list-style:  none;
+    text-decoration: none;
+    margin-top: 14px;
+}
+footer ul li {
+    display: inline-block;
+    margin: 0 13px 0 13px
+}
+footer ul li a {
+    text-decoration: none;
+    font-family: 'Oswald';
+    font-size: 1em;
+    color: rgba(96, 96, 96, 0.6);
+    border-bottom: 2px dotted rgba(96, 96, 96, 0.6);
+}
+.copyright {
+    font-family: 'Oswald';
+    font-size: 1em;
+    color: rgba(96, 96, 96, 0.6);
 }
