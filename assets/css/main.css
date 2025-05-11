@@ -61,7 +61,7 @@ body {
     height: 100px;
 }
 nav ul  {
-    margin-top: 140px;
+    margin-top: 20vw;
 }
 nav ul li {
     list-style:  none;
@@ -83,7 +83,7 @@ nav {
     position: absolute;
     width:  100%;
     height: 100vh;
-    background: rgba(0,0,0, 0.9);
+    background: rgba(0,0,0, 1);
     z-index: 2;
     left: 0;
     display: none;
@@ -104,7 +104,7 @@ nav {
 @media screen and (max-width: 985px) {
     .brand {
         font-size: 30px;
-        margin: 40px 0 0 20px
+        margin: 14px 0 0 16px
     }
 }
 
@@ -114,13 +114,13 @@ nav {
     right: 80px;
     top: 50px;
     cursor: pointer;
-    background-color: #181818;
+    background-color: black;
 }
 @media screen and (max-width: 985px) {
     .close-icon {
-        width: 30px;
+        width: 28px;
         right: 20px;
-        top: 43px;
+        top: 18px;
     }
 }
 .menu-icon {
@@ -133,9 +133,9 @@ nav {
 }
 @media screen and (max-width: 985px) {
     .menu-icon {
-        width: 30px;
+        width: 28px;
         right: 20px;
-        top: 43px;
+        top: 18px;
     }
 }
 
@@ -256,6 +256,9 @@ form div input {
     height: 34px;
     border-radius: 6px;
 }
+form div input:focus {
+    outline-color: #FEFBEA;
+}
 .actions li {
     list-style-type: none;
     display: block;
@@ -294,9 +297,6 @@ label a  {
     color: dimgrey;
     text-decoration: none;
     border-bottom: 2px dotted rgba(96, 96, 96, 0.6);
-}
-.carousel img {
-    border-radius: 6px;
 }
 
 /* ---- Footer ---- */
