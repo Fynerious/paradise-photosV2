@@ -321,6 +321,7 @@ label a  {
 @media screen and (max-width: 900px) {
     .portfolio-item {
         width: 100%;
+        margin-bottom: 6vw;
     }
 }
 .portfolio-item img {
@@ -328,6 +329,11 @@ label a  {
     display: block;
     margin: auto;
     border-radius: 16px;
+}
+@media screen and (max-width: 900px) {
+    .portfolio-item img {
+        border-radius: 12px;
+    }
 }
 .portfolio-text {
     position: absolute;
@@ -338,6 +344,15 @@ label a  {
     border-radius: 16px;
     transition: background-color 0.3s;
 }
+@media screen and (max-width: 900px) {
+    .portfolio-text {
+        width: 80.90vw;
+        margin-left: 2.5vw;
+        height: 53.85vw;
+        transform: translate(0, -53.85vw);
+        border-radius: 12px;
+    }
+}
 .portfolio-text h2 {
     font-size: 4vw;
     font-family: 'potra';
@@ -347,6 +362,12 @@ label a  {
     -webkit-user-select:  none;
     -ms-user-select:  none;
     user-select:  none;
+}
+@media screen and (max-width: 900px) {
+    .portfolio-text h2 {
+        font-size: 8vw;
+        margin-top: 22.2vw;
+    }
 }
 .portfolio-text:hover {
     background-color: rgba(0, 0, 0, 0.6);
@@ -361,6 +382,7 @@ footer {
     right: 0;
     bottom: 0;
     width: 100%;
+    text-align: center;
 }
 .black-row {
     height: 2px;
