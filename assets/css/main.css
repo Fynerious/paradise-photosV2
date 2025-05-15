@@ -50,6 +50,13 @@ body {
     overflow: hidden;
     min-height: 100vh;
 }
+.page-wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+.content-wrapper {
+    padding-bottom: 10rem;
+}
 .header {
     height: 120px;
 }
@@ -376,8 +383,8 @@ label a  {
     /* ---- Footer ---- */
 
 footer {
+    position: absolute;
     height: 60px;
-    margin-top: 500px; /* UNBEDINGT NOCH ANPASSEN FOOTER MUSS IMMER AM ENDE SEIN */
     left: 0;
     right: 0;
     bottom: 0;
