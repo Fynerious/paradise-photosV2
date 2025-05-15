@@ -74,6 +74,7 @@ nav ul li a {
     letter-spacing: 5px;
     padding: 5px;
     font-family: Potra;
+    transition: color 0.2s;
 }
 @media screen and (max-width: 900px) { 
     nav ul li a {
@@ -82,7 +83,6 @@ nav ul li a {
 }
 nav ul li a:hover {
     color: dimgrey;
-    transition: 0.2s;
 }
 nav {
     position: absolute;
@@ -315,7 +315,7 @@ label a  {
 }
 .portfolio-item {
     width: calc(100% / 2);
-    margin-bottom: 40px;
+    margin-bottom: 2.4vw;
     text-align: center;
 }
 @media screen and (max-width: 900px) {
@@ -327,6 +327,7 @@ label a  {
     width: 94%;
     display: block;
     margin: auto;
+    border-radius: 16px;
 }
 .portfolio-text {
     position: absolute;
@@ -334,15 +335,24 @@ label a  {
     margin-left: 1.3vw;
     height: 26.95vw;
     transform: translate(0, -26.95vw);
+    border-radius: 16px;
+    transition: background-color 0.3s;
 }
 .portfolio-text h2 {
     font-size: 4vw;
-    font-family: 'Oswald';
-    color: blue;
-    margin-top: 10.25vw
+    font-family: 'potra';
+    color: whitesmoke;
+    margin-top: 11.1vw;
+    pointer-events: none;
+    -webkit-user-select:  none;
+    -ms-user-select:  none;
+    user-select:  none;
+}
+.portfolio-text:hover {
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* ---- Footer ---- */
+    /* ---- Footer ---- */
 
 footer {
     height: 60px;
