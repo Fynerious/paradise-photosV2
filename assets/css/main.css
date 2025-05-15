@@ -75,6 +75,11 @@ nav ul li a {
     padding: 5px;
     font-family: Potra;
 }
+@media screen and (max-width: 900px) { 
+    nav ul li a {
+        font-size: 46px;
+    }
+}
 nav ul li a:hover {
     color: dimgrey;
     transition: 0.2s;
@@ -101,7 +106,7 @@ nav {
     float: left;
     margin: 40px 0 0 30px
 }
-@media screen and (max-width: 985px) {
+@media screen and (max-width: 900px) {
     .brand {
         font-size: 30px;
         margin: 14px 0 0 16px
@@ -116,7 +121,7 @@ nav {
     cursor: pointer;
     background-color: black;
 }
-@media screen and (max-width: 985px) {
+@media screen and (max-width: 900px) {
     .close-icon {
         width: 28px;
         right: 20px;
@@ -131,7 +136,7 @@ nav {
     cursor: pointer;
     margin: 0;
 }
-@media screen and (max-width: 985px) {
+@media screen and (max-width: 900px) {
     .menu-icon {
         width: 28px;
         right: 20px;
@@ -299,16 +304,53 @@ label a  {
     border-bottom: 2px dotted rgba(96, 96, 96, 0.6);
 }
 
+/* ---- Portfolio ---- */
+
+.portfolio{
+    width: 86vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10vw auto 0 auto;
+}
+.portfolio-item {
+    width: calc(100% / 2);
+    margin-bottom: 40px;
+    text-align: center;
+}
+@media screen and (max-width: 900px) {
+    .portfolio-item {
+        width: 100%;
+    }
+}
+.portfolio-item img {
+    width: 94%;
+    display: block;
+    margin: auto;
+}
+.portfolio-text {
+    position: absolute;
+    width: 40.43vw;
+    margin-left: 1.3vw;
+    height: 26.95vw;
+    transform: translate(0, -26.95vw);
+}
+.portfolio-text h2 {
+    font-size: 4vw;
+    font-family: 'Oswald';
+    color: blue;
+    margin-top: 10.25vw
+}
+
 /* ---- Footer ---- */
 
 footer {
     height: 60px;
-    position: fixed;
+    margin-top: 500px; /* UNBEDINGT NOCH ANPASSEN FOOTER MUSS IMMER AM ENDE SEIN */
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
 }
 .black-row {
     height: 2px;

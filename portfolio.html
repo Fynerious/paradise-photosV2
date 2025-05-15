@@ -1,16 +1,43 @@
 <!DOCTYPE HTML>
 <html lang="de">
 <head>
-    <title>Paradise Photos - Portfolio</title>
+    <title>Paradise Photos</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-wildlife
-sport
-portrait
+<div class="header">
+    <h1><a href="index.html" class="brand">Paradise Photos</a></h1>
+    <div class="navbar">
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <img id="close" src="assets/icons/close.png" class="close-icon" alt="" onclick="closemenu()" />
+        </nav>
+        <img id="open" src="assets/icons/menu.png" class="menu-icon" alt="" onclick="openmenu()"/>
+    </div>
+</div>
+<div class="portfolio">
+    <div class="portfolio-item">
+        <img class="portfolio-category" src="assets/images/DMM-5.jpg" alt=""/>
+        <a><div class="portfolio-text"><h2>Sport</h2></div></a>
+    </div>
+    <div class="portfolio-item">
+        <img class="portfolio-category" src="assets/images/astro-3.jpg" alt=""/>
+        <a><div class="portfolio-text"><h2>Landschaft</h2></div></a>
+    </div>
+    <div class="portfolio-item">
+        <img class="portfolio-category" src="assets/images/adler1.jpg" alt="">
+        <a><div class="portfolio-text"><h2>Tiere</h2></div></a>
+    </div>
+</div>
+
+<script src="assets/js/main.js"></script>
 </body>
 <footer>
     <div class="black-row"></div>
