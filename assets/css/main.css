@@ -18,18 +18,18 @@ section, summary, time, mark, audio, video, a:visited {
 
 /* -----HEADER----- */
 
-@font-face {
+/*@font-face {
     font-family: 'Potra';
     src: url('/assets/webfonts/Potra.eot');
     src: url('/assets/webfonts/Potra.eot') format('embedded-opentype'),
     url('/assets/webfonts/Potra.woff2') format('woff2'),
     url('/assets/webfonts/Potra.woff') format('woff'),
     url('/assets/webfonts/Potra.ttf') format('truetype');
-    /* url('/assets/webfonts/Potra.svg#Potra') format('svg'); */
+    /* url('/assets/webfonts/Potra.svg#Potra') format('svg');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
-}
+}*/
 @font-face {
     font-family: 'Oswald';
     src: url('/assets/webfonts/Oswald-Regular.eot');
@@ -37,7 +37,40 @@ section, summary, time, mark, audio, video, a:visited {
     url('/assets/webfonts/Oswald-Regular.woff2') format('woff2'),
     url('/assets/webfonts/Oswald-Regular.woff') format('woff'),
     url('/assets/webfonts/Oswald-Regular.ttf') format('truetype');
-    font-weight: 100;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Arshine';
+    src: url('/assets/webfonts/ArshineExtruderight-4nZ99.eot');
+    src: url('/assets/webfonts/ArshineExtruderight-4nZ99.eot') format('embedded-opentype'),
+    url('/assets/webfonts/ArshineExtruderight-4nZ99.woff2') format('woff2'),
+    url('/assets/webfonts/ArshineExtruderight-4nZ99.woff') format('woff'),
+    url('/assets/webfonts/ArshineExtruderight-4nZ99.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gravitor';
+    src: url('/assets/webfonts/Gravitor.eot');
+    src: url('/assets/webfonts/Gravitor.eot') format('embedded-opentype'),
+    url('/assets/webfonts/Gravitor.woff2') format('woff2'),
+    url('/assets/webfonts/Gravitor.woff') format('woff'),
+    url('/assets/webfonts/Gravitor.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Paradose';
+    src: url('/assets/webfonts/WsParadoseRegular-1jPAe.eot');
+    src: url('/assets/webfonts/WsParadoseRegular-1jPAe.eot') format('embedded-opentype'),
+    url('/assets/webfonts/WsParadoseRegular-1jPAe.woff2') format('woff2'),
+    url('/assets/webfonts/WsParadoseRegular-1jPAe.woff') format('woff'),
+    url('/assets/webfonts/WsParadoseRegular-1jPAe.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
@@ -80,7 +113,7 @@ nav ul li a {
     color: #FEFBEA;
     letter-spacing: 5px;
     padding: 5px;
-    font-family: Potra;
+    font-family: 'Arshine';
     transition: color 0.2s;
 }
 @media screen and (max-width: 900px) { 
@@ -104,7 +137,7 @@ nav {
     text-align: center;
 }
 .brand {
-    font-family: 'Potra';
+    font-family: 'Arshine';
     color: black;
     font-size: 60px;
     font-weight: 200;
@@ -115,11 +148,25 @@ nav {
 }
 @media screen and (max-width: 900px) {
     .brand {
-        font-size: 30px;
-        margin: 14px 0 0 16px
+        font-size: 40px;
+        margin: 14px 0 0 16px;
     }
 }
-
+.brand-sub {
+    position: absolute;
+    margin: 100px 0 0 30px;
+    font-family: 'Paradose';
+    font-size: 19px;
+    letter-spacing: 0.002em;
+    pointer-events: none;
+}
+@media screen and (max-width: 900px) {
+    .brand-sub {
+        font-size: 13px;
+        margin: 54px 0 0 14px;
+        letter-spacing: normal;
+    }
+}
 .close-icon {
     width: 50px;
     position: absolute;
@@ -130,9 +177,9 @@ nav {
 }
 @media screen and (max-width: 900px) {
     .close-icon {
-        width: 28px;
+        width: 34px;
         right: 20px;
-        top: 18px;
+        top: 19px;
     }
 }
 .menu-icon {
@@ -145,9 +192,9 @@ nav {
 }
 @media screen and (max-width: 900px) {
     .menu-icon {
-        width: 28px;
+        width: 34px;
         right: 20px;
-        top: 18px;
+        top: 19px;
     }
 }
 
@@ -362,7 +409,7 @@ label a  {
 }
 .portfolio-text h2 {
     font-size: 4vw;
-    font-family: 'potra';
+    font-family: 'Arshine';
     color: whitesmoke;
     margin-top: 11.1vw;
     pointer-events: none;
