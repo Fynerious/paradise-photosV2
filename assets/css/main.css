@@ -164,7 +164,7 @@ nav {
     .brand-sub {
         font-size: 13px;
         margin: 54px 0 0 14px;
-        letter-spacing: normal;
+        letter-spacing: -0.005em;
     }
 }
 .close-icon {
