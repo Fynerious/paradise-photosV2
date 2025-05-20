@@ -1,10 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Zeitgeist</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favcon.png">
 </head>
 <body>
-
+<div class="header">
+    <h1><a href="index.html" class="brand">Zeitgeist</a></h1>
+    <p class="brand-sub">Photography by Fynn Bjarne Krankenberg</p>
+    <div class="navbar">
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+            </ul>
+            <img id="close" src="assets/icons/close.png" class="close-icon" alt="" onclick="closemenu()" />
+        </nav>
+        <img id="open" src="assets/icons/menu.png" class="menu-icon" alt="" onclick="openmenu()"/>
+    </div>
+</div>
+<div class="page-wrapper">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="column">
+                <img src="portfolio/sport/DMM-1.jpg" alt="">
+                <img src="portfolio/sport/DMM-2.jpg" alt="">
+            </div>
+            <div class="column">
+                <img src="portfolio/sport/DMM-3.jpg" alt="">
+                <img src="portfolio/sport/DMM-4.jpg" alt="">
+            </div>
+            <div class="column">
+                <img src="portfolio/sport/DMM-5.jpg" alt="">
+                <img src="portfolio/sport/DMM-7.jpg" alt="">
+            </div>
+            <div class="column">
+                <img src="portfolio/sport/DMM-6.jpg" alt="">
+                <img src="portfolio/sport/DMM-8.jpg" alt="">
+            </div>
+        </div>
+    </div>
+<script src="assets/js/main.js"></script>
+<footer>
+    <div class="black-row"></div>
+    <ul><li class="copyright">&copy; ZEITGEIST</li><li><a href="toc.html" target="_blank">Datenschutz</a></li></ul>
+</footer>
+</div>
 </body>
 </html>

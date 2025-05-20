@@ -358,7 +358,7 @@ label a  {
     border-bottom: 2px dotted rgba(96, 96, 96, 0.6);
 }
 
-/* ---- Portfolio ---- */
+/* ---- Portfolio menu ---- */
 
 .portfolio{
     width: 86vw;
@@ -427,7 +427,42 @@ label a  {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-    /* ---- Footer ---- */
+/* ---- Portfolio ---- */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10vw 2vw 0 2vw;
+}
+.column {
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 4px;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+@media screen and (max-width: 1400px) {
+    .column {
+        flex: 32%;
+        max-width: 32%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .column {
+        flex: 48%;
+        max-width: 48%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .column {
+        flex: 96%;
+        max-width: 96%;
+    }
+}
+
+/* ---- Footer ---- */
 
 footer {
     position: absolute;
