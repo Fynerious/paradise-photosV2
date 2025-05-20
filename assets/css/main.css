@@ -156,15 +156,14 @@ nav {
     position: absolute;
     margin: 100px 0 0 30px;
     font-family: 'Paradose';
-    font-size: 19px;
-    letter-spacing: 0.002em;
+    font-size: 20px;
     pointer-events: none;
 }
 @media screen and (max-width: 900px) {
     .brand-sub {
         font-size: 13px;
         margin: 54px 0 0 14px;
-        letter-spacing: -0.005em;
+        letter-spacing: 0.014em;
     }
 }
 .close-icon {
@@ -300,6 +299,7 @@ form div {
     margin: auto;
     font-family: 'Oswald';
     font-size: 1.2em;
+    border-radius: 10px;
 
 }
 select {
@@ -310,6 +310,7 @@ select {
     margin: auto;
     font-family: 'Oswald';
     font-size: 1.2em;
+    border-radius: 10px;
 }
 form div input {
     height: 34px;
@@ -338,6 +339,7 @@ textarea {
     width: 140px;
     font-size: 1.2em;
     font-family: 'Oswald';
+    border-radius: 10px;
 }
 label {
     display: block;
@@ -442,6 +444,7 @@ label a  {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    pointer-events: none;
 }
 @media screen and (max-width: 1400px) {
     .column {
@@ -455,7 +458,7 @@ label a  {
         max-width: 48%;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 640px) {
     .column {
         flex: 96%;
         max-width: 96%;
